@@ -1,6 +1,71 @@
 @ITQ2_BSIT32E1_Batoy_Nicholo_HostAddress = http://localhost:5084
 
+### WeatherForecast
 GET {{ITQ2_BSIT32E1_Batoy_Nicholo_HostAddress}}/weatherforecast/
 Accept: application/json
 
-###
+### User - Get All
+GET {{ITQ2_BSIT32E1_Batoy_Nicholo_HostAddress}}/User
+Accept: application/json
+
+### User - Get By Id
+GET {{ITQ2_BSIT32E1_Batoy_Nicholo_HostAddress}}/User/1
+Accept: application/json
+
+### User - Create
+POST {{ITQ2_BSIT32E1_Batoy_Nicholo_HostAddress}}/User
+Content-Type: application/json
+
+{
+  "name": "Juan Dela Cruz",
+  "email": "juan@example.com"
+}
+
+### User - Update
+PUT {{ITQ2_BSIT32E1_Batoy_Nicholo_HostAddress}}/User
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Updated Name",
+  "email": "updated@example.com"
+}
+
+### User - Delete
+DELETE {{ITQ2_BSIT32E1_Batoy_Nicholo_HostAddress}}/User/1
+
+### UserGroup - Get All
+GET {{ITQ2_BSIT32E1_Batoy_Nicholo_HostAddress}}/UserGroup
+Accept: application/json
+
+### UserGroup - Get By Id
+GET {{ITQ2_BSIT32E1_Batoy_Nicholo_HostAddress}}/UserGroup/1
+Accept: application/json
+
+### UserGroup - Create
+POST {{ITQ2_BSIT32E1_Batoy_Nicholo_HostAddress}}/UserGroup
+Content-Type: application/json
+
+{
+  "name": "BSIT 32E1",
+  "listOfUsers": [
+    {
+      "id": 1,
+      "name": "Nicholo Batoy",
+      "email": "nicholo@example.com"
+    }
+  ]
+}
+
+### UserGroup - Update
+PUT {{ITQ2_BSIT32E1_Batoy_Nicholo_HostAddress}}/UserGroup
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Updated Group",
+  "listOfUsers": []
+}
+
+### UserGroup - Delete
+DELETE {{ITQ2_BSIT32E1_Batoy_Nicholo_HostAddress}}/UserGroup/1

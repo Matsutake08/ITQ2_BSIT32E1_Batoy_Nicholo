@@ -1,3 +1,4 @@
+using ITQ2_BSIT32E1_Batoy_Nicholo.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ITQ2_BSIT32E1_Batoy_Nicholo.Controllers

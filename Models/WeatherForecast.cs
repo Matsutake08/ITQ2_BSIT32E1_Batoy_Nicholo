@@ -1,4 +1,4 @@
-namespace ITQ2_BSIT32E1_Batoy_Nicholo
+namespace ITQ2_BSIT32E1_Batoy_Nicholo.Models
 {
     public class WeatherForecast
     {
